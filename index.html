@@ -160,7 +160,43 @@
                     </div>
 
                     <hr />
+                    <h3 style="color: #00ffcc; margin-top: 30px; margin-bottom: 15px;">💻 Laboratorio Pratico & SOC Playbook</h3>
+    <p>Per tradurre in pratica le nozioni universitarie e arrivare pienamente operativo al tirocinio curriculare, ho allestito un laboratorio virtuale basato su <strong>Kali Linux</strong>. Continuo a esercitarmi costantemente per affinare queste skills, documentando le procedure di analisi ed incident response nel mio <strong>SOC Playbook v1.1</strong> personale:</p>
+    
+    <div class="table-wrapper">
+        <table style="font-size: 0.9em;">
+            <thead>
+                <tr>
+                    <th style="color: #00ffcc; width: 30%;">Fase / Focus</th>
+                    <th style="color: #ffffff;">Comandi Core & Tecniche di Analisi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>OSINT & File System</strong></td>
+                    <td>Navigazione e tracciamento delle directory (<code>pwd</code>, <code>ls -l</code>, <code>cd</code>) e ricerca mirata nella radice escludendo gli errori di sistema (<code>find / -name "file" 2>/dev/null</code>).</td>
+                </tr>
+                <tr>
+                    <td><strong>Identity Management</strong></td>
+                    <td>Ispezione dei privilegi, UID e controllo dei gruppi (<code>whoami</code>, <code>id</code>) combinati con sessioni pulite di switch user (<code>su -</code>).</td>
+                </tr>
+                <tr>
+                    <td><strong>File I/O & Permessi</strong></td>
+                    <td>Manipolazione dei file di configurazione, editing tramite <code>nano</code>, tecniche di reindirizzamento/append (<code>&gt;</code>, <code>&gt;&gt;</code>) e blindaggio degli accessi con permessi restrittivi (<code>chmod 700</code>).</td>
+                </tr>
+                <tr>
+                    <td><strong>Advanced Auditing & Log</strong></td>
+                    <td>Monitoraggio in tempo reale dei log di autenticazione (<code>journalctl -f</code>) e configurazione di regole di monitoraggio forense (<code>auditctl -w</code>) per tracciare accessi abusivi via UID tramite <code>ausearch</code>.</td>
+                </tr>
+                <tr>
+                    <td><strong>Incident Response</strong></td>
+                    <td>Analisi dell'albero dei processi (<code>pstree -p</code>), tracciamento dei processi nascosti in background (<code>&amp;</code>), filtraggio tramite <code>grep</code> e terminazione forzata delle anomalie (<code>kill -9</code>).</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
+    <hr />
                     <h3>Certificazioni Ottenute</h3>
                     <ul>
                         <li><strong>Google Cybersecurity Professional Certificate</strong> (Coursera)</li>
